@@ -24,8 +24,8 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
-      - run: echo "HI"
-      - run : sleep 15
+          - run: echo "HI"
+          - run : sleep 15
          
     
 
