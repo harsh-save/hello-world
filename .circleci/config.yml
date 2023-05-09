@@ -6,7 +6,8 @@ version: 2.1
 # See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
     one: 
-        docker: cimg/ ruby:2.6.8
+        docker: 
+            -image: cimg/ ruby:2.6.8
         auth:
             username: mydockerhub-user
             password: $DOCKERHUB_PASSWORD
