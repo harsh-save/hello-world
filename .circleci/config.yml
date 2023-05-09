@@ -25,7 +25,7 @@ jobs:
     steps:
       - checkout
       - run: echo "HI"
-      -run : sleep 15
+      - run : sleep 15
          
     
 
