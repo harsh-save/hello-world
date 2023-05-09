@@ -17,6 +17,17 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+    one:
+    docker:
+      - image: cimg/ruby:3.0.2
+    # Add steps to the job
+    # See: https://circleci.com/docs/configuration-reference/#steps
+    steps:
+      - checkout
+      - run: echo "HI"
+      -run : sleep 15
+         
+    
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
@@ -24,5 +35,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - one
 
 
